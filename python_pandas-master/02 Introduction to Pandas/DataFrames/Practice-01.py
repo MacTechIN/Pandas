@@ -10,7 +10,7 @@ Created on Thu Oct 12 23:35:00 2023
 
 import pandas as pd 
 
-df = pd.read_csv('/Users/sl/Workspace/MLDS/Pandas/python_pandas-master/sample_data/02 Introduction to Pandas/intel.csv')
+df = pd.read_csv('./sample_data/02 Introduction to Pandas.csv')
 
 #How to check df shape 
 print(df.shape)
@@ -40,3 +40,9 @@ print(df[["Open","Close"]].head())
 
 #%%
 print(df.describe())
+
+#%%
+
+print(df['Open'].min())
+
+print(df["Open"].mean())
